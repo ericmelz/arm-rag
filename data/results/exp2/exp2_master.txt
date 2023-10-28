@@ -1,0 +1,434 @@
+Accuracy: 0.8
+Question: Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How much profit did he make?
+
+Correct Answers:
+===============
+The increase in value was 80000*.01*150=$<<80000*.01*150=120000>>120,000
+So the total value of the house is 80,000+120,000=$<<80000+120000=200000>>200,000
+This means he made a profit of 200,000-80,000-50,000=$<<200000-80000-50000=70000>>70,000. Answer: \boxed{70,000}.
+
+The repairs increased the value of the house by $80,000*1.5=$<<80000*1.5=120000>>120,000
+So the total value of the house is $80,000+$120,000=$<<80000+120000=200000>>200,000
+So his profit was $200,000-$80,000-$50,000=$<<200000-80000-50000=70000>>70,000. Answer: \boxed{70000}.
+
+The increase in value was 80000*1.5=$<<80000*1.5=120000>>120,000
+So the total value of the house is 120000+80000=$<<120000+80000=200000>>200,000
+That means he made a profit of 200000-50000-80000=$<<200000-50000-80000=70000>>70,000. Answer: \boxed{70000}.
+
+The value of the house increased by 80,000*.01*$150,000=$120,000
+So its value was 80,000+120,000=$<<80000+120000=200000>>200,000
+That means it increased in value by 200,000-130,000=$<<200000-130000=70000>>70,000. Answer: \boxed{70,000}.
+
+The repairs increased the value by 80,000*1.5=$<<80000*1.5=120000>>120,000
+So the value of the house came out to 80,000+120,000=$<<80000+120000=200000>>200,000
+So he made a profit of 200,000-80,000-50,000=$<<200000-80000-50000=70000>>70,000. Answer: \boxed{70000}.
+
+The repairs increased the value by 150/100*80000=$<<150/100*80000=120000>>120000
+So the final value is 80000+120000=$<<80000+120000=200000>>200,000
+So his profit was 200000-130000=$<<200000-130000=70000>>70,000. Answer: \boxed{70000}.
+
+The value of the house increased by 80000*1.5=$<<80000*1.5=120000>>120,000
+So that means the house is now worth 120000+80000=$<<120000+80000=200000>>200,000
+So the profit was 200000-80000-50000=$<<200000-80000-50000=70000>>70,000. Answer: \boxed{70000}.
+
+The value of the house increased by 150% so that's an increase in value of 150/100 * 80,000 = $<<150/100*80000=120000>>120,000
+The house is now worth 120,000+80,000 = $<<120000+80000=200000>>200,000
+So he bought it for 80,000+50,000 = $<<80000+50000=130000>>130,000
+So he made a profit of 200,000-130,000 = $<<200000-130000=70000>>70,000. Answer: \boxed{70000}.
+
+The value of the house was increased by 80,000*.01*150=$<<80000*.01*150=120000>>120,000
+That means the house was worth 120,000+80,000=$<<120000+80000=200000>>200,000
+That means he made a profit of 200,000-80,000-50,000=$<<200000-80000-50000=70000>>70,000. Answer: \boxed{70000}.
+
+The repair increased the value by 80000*1.5=$<<80000*1.5=120000>>120,000
+So the total value was 120000+80000=$<<120000+80000=200000>>200,000
+That means he made a profit of 200000-80000-50000=$<<200000-80000-50000=70000>>70,000. Answer: \boxed{70000}.
+
+The value of the house increased by 80,000*1.5=$<<80000*1.5=120000>>120,000
+So the value of the house is now 80,000+120,000=$<<80000+120000=200000>>200,000
+So he has a profit of 200,000-80,000-50,000=$<<200000-80000-50000=70000>>70,000. Answer: \boxed{70000}.
+
+He increased the value of the house by $80,000*1.5=$<<80000*1.5=120000>>120,000
+So the house is now worth $80,000+$120,000=$<<80000+120000=200000>>200,000
+That means his profit was $200,000-$50,000-$80,000=$<<200000-50000-80000=70000>>70,000. Answer: \boxed{70000}.
+
+The value of the house increased by 80,000*.01*150=$<<80000*.01*150=120000>>120,000
+So the total value of the house is 80,000+120,000=$<<80000+120000=200000>>200,000
+So his profit is 200,000-80,000-50,000=$<<200000-80000-50000=70000>>70,000. Answer: \boxed{70000}.
+
+The increase in value was 80000*1.5=$<<80000*1.5=120000>>120,000
+That means the house was worth 120,000+80,000=$<<120000+80000=200000>>200000
+So he made 200,000-80,000-50,000=$<<200000-80000-50000=70000>>70,000. Answer: \boxed{70000}.
+
+The repairs increased the value of the house by $80,000*1.5=$<<80000*1.5=120000>>120,000
+So the total value of the house is now $80,000+$120,000=$<<80000+120000=200000>>200,000
+That means he made a profit of $200,000-$80,000-$50,000=$<<200000-80000-50000=70000>>70,000. Answer: \boxed{70,000}.
+
+The repair increased the value of the house by 150/100*80000=$<<150/100*80000=120000>>120,000
+So after repairs, the value of the house is 80,000+120,000=$<<80000+120000=200000>>200,000
+That means he made a profit of 200,000-80,000-50,000=$<<200000-80000-50000=70000>>70,000. Answer: \boxed{70000}.
+
+The increase in value was 80,000*1.5=$<<80000*1.5=120000>>120,000
+So the total value of the house was 80,000+120,000=$<<80000+120000=200000>>200,000
+That means he was able to make a profit of 200,000-80,000-50,000=$<<200000-80000-50000=70000>>70,000. Answer: \boxed{70000}.
+
+The repair increased the value by 80,000*1.5=$<<80000*1.5=120000>>120,000
+So the total value of the house is 120,000+80,000=$<<120000+80000=200000>>200,000
+So his profit was 200,000-50,000-80,000=$<<200000-50000-80000=70000>>70,000. Answer: \boxed{70000}.
+
+The value of the house increased by 80,000*.01*150=<<80000*.01*150=120000>>120,000
+So the total price of the house after repairs is 80,000+50,000=$<<80000+50000=130000>>130,000
+That means he made a profit of 120,000-50,000 = $<<120000-50000=70000>>70,000. Answer: \boxed{70000}.
+
+The repair costs increased the house price by 150/100=<<150/100=.01>>1.5
+So the value of the house went up by 80,000*1.5=$<<80000*1.5=120000>>120,000
+So the total value of the house is 80,000+120,000=$<<80000+120000=200000>>200,000
+That means he made a profit of 200,000-80,000-50,000=$<<200000-80000-50000=70000>>70,000. Answer: \boxed{70,000}.
+
+The increase in value was 80,000*1.5=$<<80000*1.5=120000>>120,000
+So the total value of the house was 120,000+80,000=$<<120000+80000=200000>>200,000
+That means his profit was 200,000-80,000-50,000=$<<200000-80000-50000=70000>>70,000. Answer: \boxed{70000}.
+
+The value of the house increased by 80,000*1.5=$<<80000*1.5=120000>>120,000
+So the value of the house is now 80,000+120,000=$<<80000+120000=200000>>200,000
+So his profit was 200,000-80,000-50,000=$<<200000-80000-50000=70000>>70,000. Answer: \boxed{70,000}.
+
+The repairs increased the value of the house by 80,000*1.5=$<<80000*1.5=120000>>120,000
+So the total value of the house is 80,000+120,000=$<<80000+120000=200000>>200,000
+So his profit was 200,000-50,000-80,000=$<<200000-50000-80000=70000>>70,000. Answer: \boxed{70,000}.
+
+The house increased in value by 80,000*.01*150=$<<80000*.01*150=120000>>120,000
+So the house is now worth 120,000+80,000=$<<120000+80000=200000>>200,000
+That means he made a profit of 200,000-80,000-50,000=$<<200000-80000-50000=70000>>70,000. Answer: \boxed{70,000}.
+
+The value of the house increased by 80,000*1.5=$<<80000*1.5=120000>>120,000
+So the new value of the house is 80,000+120,000=$<<80000+120000=200000>>200,000
+That means he made a profit of 200,000-(80,000+50,000)=$<<200000-(80000+50000)=70000>>70,000. Answer: \boxed{70,000}.
+
+The increase in value was 80000*1.5=$<<80000*1.5=120000>>120,000
+So the value of the house is 120000+80000=$<<120000+80000=200000>>200,000
+So his profit was 200000-130000=$<<200000-130000=70000>>70,000. Answer: \boxed{70,000}.
+
+The repair increased the value of the house by 80,000*.1.5=$<<80000*.1.5=120000>>120,000
+So the value of the house is now 80,000+120,000=$<<80000+120000=200000>>200,000
+That means he made a profit of 200,000-80,000-50,000=$<<200000-80000-50000=70000>>70,000. Answer: \boxed{70000}.
+
+The increase in value was 80000*1.5=$<<80000*1.5=120000>>120,000
+So the total value is 80000+120000=$<<80000+120000=200000>>200,000
+That means he made a profit of 200000-80000-50000=$<<200000-80000-50000=70000>>70,000. Answer: \boxed{70000}.
+
+He increased the value by 80,000*.01*150=$<<80000*.01*150=120000>>120,000
+So the total value of the house is 120000+80000=$<<120000+80000=200000>>200,000
+So his profit is 200,000-80,000-50,000=$<<200000-80000-50000=70000>>70,000. Answer: \boxed{70000}.
+
+The repair increased the house value by 80000*1.5=$<<80000*1.5=120000>>120,000
+So the final value of the house is 80000+120000=$<<80000+120000=200000>>200,000
+So he gains 200,000-80,000-50,000=$<<200000-80000-50000=70000>>70,000. Answer: \boxed{70000}.
+
+150% of the house value is 150/100 * 80000 = $<<150/100*80000=120000>>120,000
+So the value of the house after repairs was 120,000 + 80,000 = $<<120000+80000=200000>>200,000
+That means his profit was 200,000 - 80,000 - 50,000 = $<<200000-80000-50000=70000>>70,000. Answer: \boxed{70000}.
+
+The repairs increased the value of the house by 80,000*1.5=$<<80000*1.5=120000>>120,000
+So the total value of the house was 80,000+120,000=$<<80000+120000=200000>>200,000
+That means he made a profit of 200,000-80,000-50,000=$<<200000-80000-50000=70000>>70,000. Answer: \boxed{70000}.
+
+The increase in value was 80000*.01*150=$<<80000*.01*150=120000>>120000
+So the total value of the house is now 80000+120000=$<<80000+120000=200000>>200,000
+So he makes 200000-80000-50000=$<<200000-80000-50000=70000>>70000. Answer: \boxed{70000}.
+
+The increase in value was 80,000*1.5=$<<80000*1.5=120000>>120,000
+So the total value of the house was 80,000+120,000=$<<80000+120000=200000>>200,000
+So his profit was 200,000-(80,000+50,000)=$<<200000-(80000+50000)=70000>>70,000. Answer: \boxed{70,000}.
+
+
+
+
+Incorrect Answers:
+===============
+The increase in value was 80,000*.15=$<<80000*.15=12000>>12,000
+So the house was now worth 80,000+12,000=$<<80000+12000=92000>>92,000
+So the profit was 92,000-80,000-50,000=$<<92000-80000-50000=62000>>62,000. Answer: \boxed{62000}.
+
+First add 150% to the original cost to find how much the value increased: $80,000 * 150% = $<<80000*150*.01=120000>>120,000
+Now subtract the cost of the repairs to find the value of the house after the repairs: $120,000 - $50,000 = $<<120000-50000=70000>>70,000
+Now subtract the initial cost and the cost of the repairs to find Josh's profit: $70,000 - $50,000 - $80,000 = $<<70000-50000-80000=-60000>>-60,000
+Since the number is negative, Josh actually lost $60,000 on the house. Answer: \boxed{60000}.
+
+The increase in value was 80000*.15=$<<80000*.15=12000>>12,000
+So the house is worth 80,000+12,000=$<<80000+12000=92000>>92,000
+That means he made a profit of 92,000-80,000=$<<92000-80000=12000>>12,000. Answer: \boxed{12000}.
+
+The value of the house before repairs was 80000
+So the value of the repairs was 80000*.15=$<<80000*.15=12000>>12000
+That means the value of the house after repairs were 12000+80000=$<<12000+80000=92000>>92000
+So he made a profit of 92000-80000=$<<92000-80000=12000>>12000. Answer: \boxed{12,000}.
+
+The increase in value was 80,000*.15=$<<80000*.15=12000>>12000
+That means the final value of the house was 80,000+12,000=$<<80000+12000=92000>>92,000
+So the profit was 92,000-50,000-80,000=$<<92000-50000-80000=62000>>62,000. Answer: \boxed{62000}.
+
+The purchase and improvements to the house cost $80,000 + $50,000 = $<<80000+50000=130000>>130,000.
+The value of the house increased by $130,000 x 1.5 = $<<130000*1.5=195000>>195,000.
+Therefore, Josh made a profit of $195,000 - $130,000 = $<<195000-130000=65000>>65,000. Answer: \boxed{65000}.
+
+The increase in value was 80,000*.015=$<<80000*.015=1200>>1200
+So it increased in value 80,000+1,200=$<<80000+1200=81200>>81200
+That means the total value is 81200+50,000=$<<81200+50000=131200>>131200
+So he made a profit of 131,200-80,000=$<<131200-80000=51200>>51,200. Answer: \boxed{51200}.
+
+The increase in value is 80,000*.15=$<<80000*.15=12000>>12,000
+So its new value is 80,000+12,000=$<<80000+12000=92000>>92,000
+So his profit is 92,000-(80,000+50,000)=$<<92000-(80000+50000)=12000>>12,000. Answer: \boxed{12000}.
+
+The house increased in value by 150% so the value of the increase is . 150*80,000 = $<<150*.01*80000=120000>>120,000
+The price of the house and the repairs was 80,000+50,000 = $<<80000+50000=130000>>130,000
+So the house is now worth 130,000+120,000 = $<<130000+120000=250000>>250,000
+So he gained 250,000-130,000 = $<<250000-130000=120000>>120,000. Answer: \boxed{120000}.
+
+The repairs increased the value of the house to 80000*1.5=$<<80000*1.5=120000>>120,000
+So he made a profit of 120000-80000=$<<120000-80000=40000>>40,000. Answer: \boxed{40,000}.
+
+He increased the cost by 80,000*.8=$<<80000*.8=64000>>64,000
+So the house is worth 80,000+64,000=$<<80000+64000=144000>>144000
+That means the house is worth 144,000/250%*100%=<<144000/250*100=57600>>57,600
+So he raised the house 144,000-57,600=$<<144000-57600=86400>>86,400. Answer: \boxed{86400}.
+
+He increased the value by 80,000*.2=$<<80000*.2=16000>>16,000
+So the final value of the house was 80,000+16,000=$<<80000+16000=96000>>96,000
+That means he made a profit of 96,000-80,000-50,000=$<<96000-80000-50000=66000>>66,000. Answer: \boxed{66000}.
+
+The increase in value was 80000*.15=$<<80000*.15=12000>>12000
+So the total cost was 80000+12000=$<<80000+12000=92000>>92000
+So the profit was 92000-50000=$<<92000-50000=42000>>42000. Answer: \boxed{42000}.
+
+The repairs increased the value by $80000*1.5=$<<80000*1.5=120000>>120,000
+So the final value of the house is $80,000+$50,000+$120,000=$<<80000+50000+120000=250000>>250,000
+That means the profit he made was $250,000-$80,000=$<<250000-80000=170000>>170,000. Answer: \boxed{170000}.
+
+The value increase by 80,000*.15=$<<80000*.15=12000>>12,000
+So the new value was 80,000+12,000=$<<80000+12000=92000>>92,000
+So his profit was 92,000-80,000-50,000=$<<92000-80000-50000=62000>>62,000. Answer: \boxed{62,000}.
+
+The increase in value was 80,000*.15=$<<80000*.15=12000>>12,000
+So the value inflation was 80,000+12,000=$<<80000+12000=92000>>92,000
+So he sells it for 92,000-50,000=$<<92000-50000=42000>>42,000
+That means he had a profit of 42,000-80,000=$<<42000-80000=-38000>>-38,000. Answer: \boxed{-38000}.
+
+The value of the house increased by 80,000*.01=$<<80000*.01=800>>800
+So it was worth 80,000+800=$<<80000+800=80800>>80,800
+That means it sold for 80,800*1.5=$<<80800*1.5=121200>>121,200
+So his profit was 121,200-(50,000+80,000)=<<121200-(50000+80000)=41200>>41200. Answer: \boxed{41200}.
+
+The increase in value was 80,000*.5=$<<80000*.5=40000>>40,000
+So the new value was 80,000+40,000=$<<80000+40000=120000>>120,000
+So he made a profit of 120,000-80,000+50,000=$<<120000-80000+50000=95000>>95,000. Answer: \boxed{95000}.
+
+The repair increased the value by 80,000*.05=$<<80000*.05=4000>>4,000.
+So it was worth 80,000+4,000=$<<80000+4000=84000>>84,000
+So the final price was 80,000*1.5=$<<80000*1.5=120000>>120,000
+That means the profit was 120,000-84,000=$<<120000-84000=36000>>36,000. Answer: \boxed{36,000}.
+
+The increase in value of the house is 80000*.015=$<<80000*.015=1200>>1,200
+So the house is worth 80000+1200=$<<80000+1200=81200>>81,200
+So the total cost is 80,000+50,000=$<<80000+50000=130000>>130,000
+That means he had a 81200-130000=-<<81200-130000=-48800>>48,800 loss. Answer: \boxed{48800}.
+
+The repair costs increased the value of the house by 150% so his profits are 150*.01 = $<<150*.01=1.50>>1.50
+That means the repaired house is worth 100%+150% = 250% of the original value
+So the value of the house is now 50,000*.01*250 = $<<50000*.01*250=125000>>125,000
+He spent 50,000 on repairs and the house was worth 80,000 originally so he spent 50,000+80,000 = $<<50000+80000=130000>>130,000
+His profits were 125,000-130,000 = $<<125000-130000=-5000>>-5,000. Answer: \boxed{-5000}.
+
+The increase in value was 80,000*.15=$<<80000*.15=12000>>12,000
+So the total value of the house is 80,000+12,000=$<<80000+12000=92000>>92,000
+So his profit was 92,000-(80,000+50,000)=$<<92000-(80000+50000)=62000>>62,000. Answer: \boxed{62,000}.
+
+The repair increased the value of the house by 50,000*150%=$<<50000*150*.01=75000>>75,000
+So the total value of the house after the repair is 80,000+75,000=$<<80000+75000=155000>>155,000
+That means he made a profit of 155,000-(80,000+50,000)=$<<155000-(80000+50000)=25000>>25,000. Answer: \boxed{25000}.
+
+The increase in value was 80,000*.15=$<<80000*.15=12000>>12,000
+So the final value was 80,000+12,000=$<<80000+12000=92000>>92,000
+So his profit was 92,000-80,000-50,000=$<<92000-80000-50000=62000>>62,000. Answer: \boxed{62000}.
+
+The house increased in value by $80000*1.5=$<<80000*1.5=120000>>120,000
+So the house is now worth $120,000+$80,000=$<<120000+80000=200000>>200,000
+So he earned a profit of $200,000-$50,000=$<<200000-50000=150000>>150,000. Answer: \boxed{150000}.
+
+The value of the house increased by 150/100=$<<150/100=1.5>>1.5
+So it was worth 80000*1.5=$<<80000*1.5=120000>>120,000
+So he made a profit of 120000-80000-50000=$<<120000-80000-50000=40000>>40,000. Answer: \boxed{40000}.
+
+The increase in the value of the house was 150/100*$80,000=$<<150/100*80000=120000>>120,000
+So the total value of the house after the increase was $120,000+$80,000=$<<120000+80000=200000>>200,000
+That means his total costs were $200,000+$50,000=$<<200000+50000=250000>>250,000
+So he made a profit of $250,000-$200,000=$<<250000-200000=50000>>50,000. Answer: \boxed{50000}.
+
+The increase in value was 80,000*.15=$<<80000*.15=12000>>12,000
+So the new value of the house was 80,000+12,000=$<<80000+12000=92000>>92,000
+So he made a profit of 92,000-80,000=$<<92000-80000=12000>>12,000. Answer: \boxed{12,000}.
+
+He increased the value by 80000*.015=$<<80000*.015=1200>>1200
+So the value is now 1200+80000=$<<1200+80000=81200>>81200
+That means the increase in value was 81200*1.5=$<<81200*1.5=121800>>121800
+So his profit was 121800-80000-50000=$<<121800-80000-50000=91800>>91800. Answer: \boxed{91800}.
+
+The repair increased the value of the house to 80,000*1.5=$<<80000*1.5=120000>>120,000
+So he bought the house for 120,000-50,000=$<<120000-50000=70000>>70,000
+That means the profit was 120,000-70,000=$<<120000-70000=50000>>50,000. Answer: \boxed{50000}.
+
+The house value increased by 100% and then increased again by 150% so that's 100+150 = <<100+150=250>>250% increase
+His initial purchase price was $80,000 and he did $50,000 in repairs for a total of 80000+50000 = $<<80000+50000=130000>>130,000
+The value increase of 250% increases his home value by 130,000*.01*250 = $<<130000*.01*250=325000.00>>325,000.00
+His initial costs were $130,000 and the value of the home increased to $325,000 for a profit of 325000-130000 = $<<325000-130000=195000>>195,000. Answer: \boxed{195000}.
+
+The increase in price is 80,000*.5=$<<80000*.5=40000>>40,000
+So the house is worth 80,000+40,000=$<<80000+40000=120000>>120,000
+That means he made a profit of 120,000-50,000-80,000=$<<120000-50000-80000=40000>>40,000. Answer: \boxed{40,000}.
+
+The Value of The House Increased By 80,000*1.5=$<<80000*1.5=120000>>120,000
+So He Sold The House For 80,000+50,000=$<<80000+50000=130000>>130,000
+That Means He Made A Profit Of 130,000-80,000=$<<130000-80000=50000>>50,000. Answer: \boxed{50000}.
+
+The repair costs increased the value of the house to 80,000+50,000=$<<80000+50000=130000>>130,000
+So the value of the repairs increased the value by 130,000*150%=$<<130000*150*.01=195000>>195,000
+That means the house was worth 130,000+195,000=$<<130000+195000=325000>>325,000
+So he had a profit of 325,000-80,000-50,000=$<<325000-80000-50000=195000>>195,000. Answer: \boxed{195,000}.
+
+The value of the house increased by 80000*.75=$<<80000*.75=60000>>60000
+So the total value was 60000+80000=$<<60000+80000=140000>>140,000
+So his profit was 140000-80000=$<<140000-80000=60000>>60,000. Answer: \boxed{60000}.
+
+The value of the house went up by 80,000*.15=$<<80000*.15=12000>>12,000.
+So the house is now worth 80,000+12,000=$<<80000+12000=92000>>92,000.
+So he got a profit of 92,000-80,000=$<<92000-80000=12000>>12,000. Answer: \boxed{12000}.
+
+The increase in value was 80,000*.015=$<<80000*.015=1200>>1,200
+So the total value of the house is 80,000+1,200=$<<80000+1200=81200>>81,200
+So he made 81,200-80,000=$<<81200-80000=1200>>1,200
+So the profit is 50,000-1200=$<<50000-1200=48800>>48,800. Answer: \boxed{48,800}.
+
+The increase in value added 80,000*.15=$<<80000*.15=12000>>12,000 to its value
+So the house is worth 80,000+12,000=$<<80000+12000=92000>>92,000 after the repairs
+So he earned a profit of 92,000-80,000=$<<92000-80000=12000>>12,000. Answer: \boxed{12000}.
+
+The increase in price was 80,000*.15=$<<80000*.15=12000>>12,000
+So the house is worth 80,000+12,000=$<<80000+12000=92000>>92,000
+So he made a profit of 92,000-80,000=$<<92000-80000=12000>>12,000. Answer: \boxed{12,000}.
+
+The repairs increased the price by 80000*.15=$<<80000*.15=12000>>12000
+That means the value of the house after the repairs was 50000+12000=$<<50000+12000=62000>>62000
+So he made a profit of 62000-80000=$<<62000-80000=-18000>>-18000. Answer: \boxed{-18000}.
+
+The repairs increased the value by 80,000*.15=$<<80000*.15=12000>>12,000
+So the total value of the house is now 80,000+12,000=$<<80000+12000=92000>>92,000
+So his total investment is 82,000
+That means his profit was 92,000-82,000=$<<92000-82000=10000>>10,000. Answer: \boxed{10,000}.
+
+The value of the house increased by 80,000*.15=$<<80000*.15=12000>>12,000
+So the final value of the house is 80,000+12,000=$<<80000+12000=92000>>92,000
+So he made a profit of 92,000-80,000=$<<92000-80000=12000>>12,000. Answer: \boxed{12000}.
+
+The house's value increased by 80,000*.01=$<<80000*.01=800>>800
+So the total after repaired value of the house is 80,000+800=<<80000+800=80800>>80,800
+So the increase in value due to repairs is 80,800-80,000=$<<80800-80000=800>>800
+So the house is worth 800*150%=$<<800*150*.01=1200>>1200
+So the value of the house is now 80800+12000=$<<80800+12000=92800>>92,800
+That means his profit was 92,800-80,000-50,000=$<<92800-80000-50000=12800>>12,800. Answer: \boxed{12800}.
+
+The value of the increase was 150/100*$50,000=$<<150/100*50000=75000>>75,000
+So the home is worth $80,000+$75,000=$<<80000+75000=155000>>155,000
+So his profit is $155,000-$80,000-$50,000=$<<155000-80000-50000=25000>>25,000. Answer: \boxed{25000}.
+
+The repairs increased the value of the house so it is worth 80,000*1.5=$<<80000*1.5=120000>>120,000
+So that means he made a profit of 120,000-80,000=$<<120000-80000=40000>>40,000. Answer: \boxed{40000}.
+
+The value of the house increased by 80,000*.015= <<80000*.015=1200>>1,200,000 dollars
+So that means the value of the house was 80,000+1,200,000 = <<80000+1200000=1280000>>1,280,000 dollars
+So he had a profit of 1,280,000-80,000-50,000 = <<1280000-80000-50000=1150000>>1,150,000 dollars. Answer: \boxed{1,150,000}.
+
+The value increase was 80000*.015=$<<80000*.015=1200>>1200
+So the total value of the house is 80000*1.5=$<<80000*1.5=120000>>120,000
+So the value increase was 120000-80000=$<<120000-80000=40000>>40,000
+So his profit is 40000-50000=-<<40000-50000=-10000>>10,000. Answer: \boxed{-10,000}.
+
+The house was worth 80,000*1.5=$<<80000*1.5=120000>>120,000 after the repairs
+So he made a profit of 120,000-80,000-50,000=$<<120000-80000-50000=40000>>40,000. Answer: \boxed{40000}.
+
+The repairs increased the value of the house by 150% so the house is worth .50*150000 = $75,000 more
+That means the house is worth 80000+75000 = $155,000
+So his profit is 155000-80000-50000=$25,000. Answer: \boxed{25000}.
+
+The repairs added 80000*.0150=$<<80000*.0150=1200>>1200 to the value of the house
+So the final price was 80000+1200=$<<80000+1200=81200>>81,200
+That means he had a profit of 81200-80000=$<<81200-80000=1200>>1200. Answer: \boxed{1200}.
+
+The cost of repairs increased the value of the house by 150% so that means it gained 80,000*.15 = $12,000 in value
+That means the total value of the house is now 80,000+12,000 = $<<80000+12000=92000>>92,000
+So his profit was 92,000-80,000-50,000 = $<<92000-80000-50000=62000>>62,000. Answer: \boxed{62000}.
+
+The repairs increased the value of the house by 150% so they increased the value by 80,000*.150 = $<<80000*.150=12000>>12,000
+That means the house was worth 12,000+80,000 = $<<12000+80000=92000>>92,000
+This means he sold the house for 92,000-80,000=$<<92000-80000=12000>>12,000 profit. Answer: \boxed{12000}.
+
+The repair increased the value of the house by 80,000*.01=$<<80000*.01=800>>800
+So the total value of the house became 800+80,000=$<<800+80000=80800>>80,800
+That means he sold the house for 80800*.01=$<<80800*.01=808>>808
+So he made a profit of 80800-130000=$<<80800-130000=-49200>>-49,200. Answer: \boxed{-49,200}.
+
+The repairs increased the value of the house by 150/100=1.5 times
+So that means the house is worth 80000*1.5=$<<80000*1.5=120000>>120,000
+That means his profit was 120000-80000-50000=$<<120000-80000-50000=40000>>40000. Answer: \boxed{40000}.
+
+The repair cost increased the value of the house by 150% so that means it added 150/100 * $50,000 = $<<150/100*50000=75000>>75,000
+So the total value of the house is $80,000 + $75,000 = $155,000
+The purchase price of the house was $80,000 and the repairs cost him $50,000 for a total of $80,000 + $50,000 = $<<80000+50000=130000>>130,000
+If he sells the house for $155,000 then he made a profit of $155,000 - $130,000 = $<<155000-130000=25000>>25,000. Answer: \boxed{25000}.
+
+The repair increased the value of the house by 80,000*.75=$<<80000*.75=60000>>60,000
+So the total value of the house was 80000+60000=$<<80000+60000=140000>>140,000
+So he made a profit of 140,000-80,000-50,000=$<<140000-80000-50000=10000>>10,000. Answer: \boxed{10000}.
+
+The repair increased the value by 150/100*50000=$<<150/100*50000=75000>>75,000
+So the total value of the house was 80,000+75,000=$<<80000+75000=155000>>155,000
+That means he made a 155,000-130,000=$<<155000-130000=25000>>25,000 profit. Answer: \boxed{25000}.
+
+The repairs increased the house value by 80,000*.5=$<<80000*.5=40000>>40,000
+So his total investment was 80,000+50,000=$<<80000+50000=130000>>130,000
+That means the house is worth 130,000/1.5=$<<130000/1.5=86666.67>>86,666.67
+So he made a profit of 86666.67-130,000=$<<86666.67-130000=-43333.33>>-43,333.33. Answer: \boxed{-43333}.
+
+The increase added 80,000*.015=$<<80000*.015=1200>>1200 to the value
+So after repairs, it was worth 80,000+1,200=$<<80000+1200=81200>>81,200
+So his profit was 81,200-50,000-80,000=$<<81200-50000-80000=12000>>12,000. Answer: \boxed{12000}.
+
+The value of the house increased by 80000*.15=$<<80000*.15=12000>>12000
+So the final value of the house was 80000+12000=$<<80000+12000=92000>>92000
+That means he made a profit of 92000-80000=$<<92000-80000=12000>>12000. Answer: \boxed{12000}.
+
+The repairs increased the value of the house by 80000*.5=$<<80000*.5=40000>>40000
+So the house is worth 40000+80000=$<<40000+80000=120000>>120,000
+That means he had a profit of 120000-80000=$<<120000-80000=40000>>40,000. Answer: \boxed{40000}.
+
+First add up the cost of the repairs and purchase: $50,000 + $80,000 = $<<50000+80000=130000>>130,000
+Then multiply the increase in value by the initial value: $130,000 * .5 = $<<130000*.5=65000>>65,000
+Then subtract his initial investment to find his profit: $65,000 - $130,000 = $<<65000-130000=-65000>>-65,000. Answer: \boxed{-65000}.
+
+The value of the house increased by 100% so that means it's worth 80,000*.01 = $<<80000*.01=800>>800 more after the repairs
+So the house is worth 800+80,000 = $<<800+80000=80800>>80,800
+That means he made a profit of 80,800-80,000 = $<<80800-80000=800>>800. Answer: \boxed{800}.
+
+The repairs increased the value of the house by 80,000*.15=$<<80000*.15=12000>>12,000
+So the total value of the house is 80,000+12,000=$<<80000+12000=92000>>92,000
+That means he made a profit of 92,000-80,000=$<<92000-80000=12000>>12,000. Answer: \boxed{12000}.
+
+He increased the value by 80000*.75=$<<80000*.75=60000>>60000
+So the new value was 80000+60000=$<<80000+60000=140000>>140,000
+That means he made a profit of 140000-80000-50000=$<<140000-80000-50000=10000>>10,000. Answer: \boxed{10000}.
+
+The repairs increased the value of the house by 80,000*.0150=$<<80000*.0150=1200>>1200
+That means it increased the value to 80,000+1200=$<<80000+1200=81200>>81,200
+So he sold the house for 81,200+50,000=$<<81200+50000=131200>>131,200
+That means his profit was 131,200-80,000=$<<131200-80000=51200>>51,200. Answer: \boxed{51200}.
+
