@@ -118,3 +118,8 @@ def gen_examples(start=0, end=5, n=2, id_prefix='ex4', verbose=False):
       gpt_answers['pct_correct'] = len(correct_answers) / n
 
   return examples
+
+
+def accuracy(examples):
+  correct_examples = [e for e in examples if e['gpt_answers']['pct_correct'] > 0]
+  return len(correct_examples) / len(examples)
