@@ -99,7 +99,7 @@ def gen_examples(start=0, end=5, n=2, id_prefix='ex4', verbose=False):
 
     examples.append(example)
     
-   if n > 0:
+    if n > 0:
       response = call_gpt(question, n=n)
       gpt_predicted_answers = extract_gpt_answers(response)
       for ans_id, gpt_answer in enumerate(gpt_predicted_answers):
