@@ -99,4 +99,22 @@ def gen_examples(start=0, end=5, n=2, id_prefix='ex4', verbose=False):
 
     examples.append(example)
     
+   if n > 0:
+      response = call_gpt(question, n=n)
+      gpt_predicted_answers = extract_gpt_answers(response)
+      for ans_id, gpt_answer in enumerate(gpt_predicted_answers):
+        id = f'{id_prefix}_{i}_{ans_id}'
+        boxed_answer = extract_boxed_answer(gpt_answer)
+        answer = {
+          '_id': id,
+          'rationale': gpt_answer,
+          'predicted_answer': boxed_answer
+        }
+        if is_prediction_correct(boxed_answer, gold_answer):
+          correct_answers.append(answer)
+        else:
+          incorrect_answers.append(answer)
+
+      gpt_answers['pct_correct'] = len(correct_answers) / n
+
   return examples
