@@ -54,7 +54,7 @@ def extract_gsm_answer(example):
     return '<UNK>'
 
 
-def gen_examples(start=0, end=5, n=2, id_prefix='ex4', verbose=True):
+def gen_examples(start=0, end=5, n=2, id_prefix='ex4', verbose=False):
   """
   start: start of dataset
   end: end of datset
@@ -98,3 +98,5 @@ def gen_examples(start=0, end=5, n=2, id_prefix='ex4', verbose=True):
     example['gpt_answers'] = gpt_answers
 
     examples.append(example)
+    
+  return examples
