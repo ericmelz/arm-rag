@@ -70,6 +70,8 @@ def gen_examples(start=0, end=5, n=2, id_prefix='ex4', verbose=True):
     { _id, rationale, predicted_answer }
   
   """
+  dataset = load_gsm()
+
   if end is None or end > len(dataset):
     end = len(dataset)
   examples = []
