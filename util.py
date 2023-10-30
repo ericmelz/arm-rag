@@ -188,3 +188,7 @@ def process_batch(instance_num=0,
         print()
         output_correct_results(examples, exp=exp, start=start, end=end)
         output_accuracy_results(examples, exp=exp, start=start, end=end)
+
+
+def hi():
+    print('hi')
