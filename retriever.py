@@ -5,7 +5,7 @@ from datasets import load_dataset
 class Retriever:
     def __init__(self,
                  index_dir='indexes/exp5_correct',
-                 dataset_file='collections/arm-rag/exp2_correct.jsonl'):
+                 dataset_file='data/results/exp5/exp5.jsonl'):
         self.dataset = load_dataset(path='json', data_files=dataset_file, split='train')
         self.encoder = FaissSearcher._init_encoder_from_str('facebook/contriever-msmarco')
         self.threads = 16
