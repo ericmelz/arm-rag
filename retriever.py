@@ -9,7 +9,7 @@ class Retriever:
         self.dataset = load_dataset(path='json', data_files=dataset_file, split='train')
         self.encoder = FaissSearcher._init_encoder_from_str('facebook/contriever-msmarco')
         self.threads = 16
-        searcher = FaissSearcher(index_dir=index_dir, query_encoder=encoder),
+        searcher = FaissSearcher(index_dir=index_dir, query_encoder=self.encoder),
         self.dataset_id_to_index = {}
         for i, docid in enumerate(dataset['_id']):
             dataset_id_to_index[docid] = i
