@@ -1,3 +1,4 @@
+import json
 import openai
 import re
 import os
@@ -11,15 +12,22 @@ def load_gsm():
     return dataset
 
 
-def call_gpt(prompt, n=1):
-  response = openai.ChatCompletion.create(
-    model="gpt-3.5-turbo",
-    n=n,
-    messages=[
-        {"role": "user", "content": prompt},
-    ]
-  )
-  return response
+def call_gpt(prompt, n=1, retries=5):
+    while retries > 0:
+        try:
+            response = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo",
+                n=n,
+                messages=[
+                    {"role": "user", "content": prompt},
+                ]
+            )
+            return response
+        except Exception as e:
+            print("**** CAUGHT EXCEPTION")
+            print(e)
+            print(f"**** RETRYING (retries left={retries}")
+            retries -= 1
     
 
 def extract_boxed_answer(gpt_answer):
@@ -123,3 +131,44 @@ def gen_examples(start=0, end=5, n=2, id_prefix='ex4', verbose=False):
 def accuracy(examples):
   correct_examples = [e for e in examples if e['gpt_answers']['pct_correct'] > 0]
   return len(correct_examples) / len(examples)
+
+
+def output_correct_results(examples, exp='exp5', start=None, end=None):
+    basedir = f'data/results/{exp}'
+    os.makedirs(basedir, exist_ok=True)    
+    
+    with open(f'{basedir}/{exp}_{start}_{end}.jsonl', 'w') as file:
+        for example in examples:
+            question = example['question']
+            for gpt_answer in example['gpt_answers']['correct_answers']:
+                data = {'_id': gpt_answer['_id'],
+                        'title': question,
+                        'text': gpt_answer['rationale']
+                       }
+                file.write(json.dumps(data) + '\n')
+
+
+def output_accuracy_results(examples, exp='exp5', start=None, end=None):
+    basedir = f'data/results/{exp}'
+    os.makedirs(basedir, exist_ok=True)    
+    
+    with open(f'{basedir}/{exp}_{start}_{end}_accuracy.csv', 'w') as file:
+        file.write(f'{start},{end},{end-start},{accuracy(examples)}')
+
+
+def process_batch(instance_num=0,
+                  batch_size=10,
+                  offset=0,
+                  batches_per_instance=100,
+                  n=5,
+                  exp='exp5'):
+    for batch in range(batches_per_instance - offset // batch_size):
+        start = instance_num * batch_size * batches_per_instance + batch * batch_size + offset
+        end = start + batch_size
+        print(f'Processing {batch=}.  {start=}, {end=}')
+        examples = gen_examples(start=start, end=end, n=n, verbose=True)
+        the_accuracy = accuracy(examples)
+        print(f'{the_accuracy=:.2f}')
+        print()
+        output_correct_results(examples, exp=exp, start=start, end=end)
+        output_accuracy_results(examples, exp=exp, start=start, end=end)
