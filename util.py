@@ -26,7 +26,7 @@ def call_gpt(prompt, n=1, retries=5):
         except Exception as e:
             print("**** CAUGHT EXCEPTION")
             print(e)
-            print(f"**** RETRYING (retries left={retries}")
+            print(f"**** RETRYING (retries left={retries})")
             retries -= 1
     
 
@@ -153,7 +153,23 @@ def output_accuracy_results(examples, exp='exp5', start=None, end=None):
     os.makedirs(basedir, exist_ok=True)    
     
     with open(f'{basedir}/{exp}_{start}_{end}_accuracy.csv', 'w') as file:
-        file.write(f'{start},{end},{end-start},{accuracy(examples)}')
+        file.write(f'{start},{end},{end-start},{accuracy(examples)}\n')
+
+
+def generate_prompt_from_kb(n=5):
+    preamble = """Given a math problem, generate an answer with a rationale.
+    
+Examples:
+    """
+    lines = []
+    lines.append(preamble)
+    examples = random.sample(correct_answers, n)
+    for example in examples:
+        lines.append(f'Question: {question}\n')
+        lines.append(example)
+        lines.append('\n')
+    lines.append(f'Question: {question}\n')
+    return('\n'.join(lines))
 
 
 def process_batch(instance_num=0,
