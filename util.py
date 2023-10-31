@@ -142,8 +142,10 @@ def output_correct_results(examples, exp='exp6', start=None, end=None,
     if basedir is None:
         basedir = f'data/results/{exp}'
     os.makedirs(basedir, exist_ok=True)    
-    
-    with open(f'{basedir}/{exp}_{start}_{end}.jsonl', 'w') as file:
+
+    filename = f'{basedir}/{exp}_{start}_{end}.jsonl'
+    print(f'writing {filename}...')
+    with open(filename, 'w') as file:
         for example in examples:
             question = example['question']
             for gpt_answer in example['gpt_answers']['correct_answers']:
@@ -159,8 +161,10 @@ def output_accuracy_results(examples, exp='exp6', start=None, end=None,
     if basedir is None:
         basedir = f'data/results/{exp}'
     os.makedirs(basedir, exist_ok=True)    
-    
-    with open(f'{basedir}/{exp}_{start}_{end}_accuracy.csv', 'w') as file:
+
+    filename = f'{basedir}/{exp}_{start}_{end}_accuracy.csv'
+    print(f'writing {filename}...')
+    with open(filename, 'w') as file:
         file.write(f'{start},{end},{end-start},{accuracy(examples)}\n')
 
 
