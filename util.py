@@ -166,6 +166,12 @@ def output_accuracy_results(examples, exp='exp5', start=None, end=None):
 
 def generate_prompt_from_kb(question=None, k=3, retriever=None):
     preamble = """Given a math problem, generate an answer with a rationale.
+
+Question / answer pairs have the form
+
+Question: ${question}
+
+${answer}
     
 Examples:
     """
