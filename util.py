@@ -92,13 +92,9 @@ def gen_examples(start=0, end=5, n=2, id_prefix='ex4', verbose=False,
     if verbose:
       print(f'Q{i}: {question}')
 
-    # TODO: if retriever is not None, question = generate_prompt(question, k)
     if retriever is not None:
         question = generate_prompt_from_kb(question, k=k, retriever=retriever)
         
-    if verbose:
-        print(f'P{i}: {question}')
-
     example = {
       'star_idx': i,
       'question': question,
@@ -141,7 +137,7 @@ def accuracy(examples):
   return len(correct_examples) / len(examples)
 
 
-def output_correct_results(examples, exp='exp5', start=None, end=None):
+def output_correct_results(examples, exp='exp6', start=None, end=None):
     basedir = f'data/results/{exp}'
     os.makedirs(basedir, exist_ok=True)    
     
@@ -156,7 +152,7 @@ def output_correct_results(examples, exp='exp5', start=None, end=None):
                 file.write(json.dumps(data) + '\n')
 
 
-def output_accuracy_results(examples, exp='exp5', start=None, end=None):
+def output_accuracy_results(examples, exp='exp6', start=None, end=None):
     basedir = f'data/results/{exp}'
     os.makedirs(basedir, exist_ok=True)    
     
@@ -195,16 +191,17 @@ def process_batch(instance_num=0,
                   offset=0,
                   batches_per_instance=100,
                   n=5,
-                  exp='exp5'):
+                  exp='exp6',
+                  k=3,
+                  retriever=None):
     for batch in range(batches_per_instance - offset // batch_size):
         start = instance_num * batch_size * batches_per_instance + batch * batch_size + offset
         end = start + batch_size
         print(f'Processing {batch=}.  {start=}, {end=}')
-        examples = gen_examples(start=start, end=end, n=n, verbose=True)
+        examples = gen_examples(start=start, end=end, n=n, verbose=True,
+                                k=k, retriever=retriever)
         the_accuracy = accuracy(examples)
         print(f'{the_accuracy=:.2f}')
         print()
         output_correct_results(examples, exp=exp, start=start, end=end)
         output_accuracy_results(examples, exp=exp, start=start, end=end)
-
-
