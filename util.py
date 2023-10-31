@@ -137,8 +137,10 @@ def accuracy(examples):
   return len(correct_examples) / len(examples)
 
 
-def output_correct_results(examples, exp='exp6', start=None, end=None):
-    basedir = f'data/results/{exp}'
+def output_correct_results(examples, exp='exp6', start=None, end=None,
+                           basedir=None):
+    if basedir is None:
+        basedir = f'data/results/{exp}'
     os.makedirs(basedir, exist_ok=True)    
     
     with open(f'{basedir}/{exp}_{start}_{end}.jsonl', 'w') as file:
@@ -152,8 +154,10 @@ def output_correct_results(examples, exp='exp6', start=None, end=None):
                 file.write(json.dumps(data) + '\n')
 
 
-def output_accuracy_results(examples, exp='exp6', start=None, end=None):
-    basedir = f'data/results/{exp}'
+def output_accuracy_results(examples, exp='exp6', start=None, end=None,
+                            basedir=None):
+    if basedir is None:
+        basedir = f'data/results/{exp}'
     os.makedirs(basedir, exist_ok=True)    
     
     with open(f'{basedir}/{exp}_{start}_{end}_accuracy.csv', 'w') as file:
@@ -193,6 +197,7 @@ def process_batch(instance_num=0,
                   n=5,
                   exp='exp6',
                   k=3,
+                  basedir=None,
                   retriever=None):
     for batch in range(batches_per_instance - offset // batch_size):
         start = instance_num * batch_size * batches_per_instance + batch * batch_size + offset
@@ -203,5 +208,7 @@ def process_batch(instance_num=0,
         the_accuracy = accuracy(examples)
         print(f'{the_accuracy=:.2f}')
         print()
-        output_correct_results(examples, exp=exp, start=start, end=end)
-        output_accuracy_results(examples, exp=exp, start=start, end=end)
+        output_correct_results(examples, exp=exp, start=start, end=end,
+                               basedir=basedir)
+        output_accuracy_results(examples, exp=exp, start=start, end=end,
+                                basedir=basedir)
