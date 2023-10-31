@@ -176,7 +176,6 @@ Examples:
 
     lines = []
     lines.append(preamble)
-    examples = random.sample(correct_answers, n)
     for example in examples:
         lines.append(f'Question: {example["title"]}\n')
         lines.append(example['text'])
