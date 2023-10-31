@@ -94,7 +94,7 @@ def gen_examples(start=0, end=5, n=2, id_prefix='ex4', verbose=False,
 
     # TODO: if retriever is not None, question = generate_prompt(question, k)
     if retriever is not None:
-        question = generate_prompt_from_kb(question, k=k)
+        question = generate_prompt_from_kb(question, k=k, retriever=retriever)
         
     if verbose:
         print(f'P{i}: {question}')
@@ -164,7 +164,7 @@ def output_accuracy_results(examples, exp='exp5', start=None, end=None):
         file.write(f'{start},{end},{end-start},{accuracy(examples)}\n')
 
 
-def generate_prompt_from_kb(question=question, k=3, retriever=None):
+def generate_prompt_from_kb(question=None, k=3, retriever=None):
     preamble = """Given a math problem, generate an answer with a rationale.
     
 Examples:
