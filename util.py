@@ -62,7 +62,8 @@ def extract_gsm_answer(example):
     return '<UNK>'
 
 
-def gen_examples(start=0, end=5, n=2, id_prefix='ex4', verbose=False):
+def gen_examples(start=0, end=5, n=2, id_prefix='ex4', verbose=False,
+                 k=3, retriever=None):
   """
   start: start of dataset
   end: end of datset
@@ -90,6 +91,13 @@ def gen_examples(start=0, end=5, n=2, id_prefix='ex4', verbose=False):
     question = gsm_example['question']
     if verbose:
       print(f'Q{i}: {question}')
+
+    # TODO: if retriever is not None, question = generate_prompt(question, k)
+    if retriever is not None:
+        question = generate_prompt_from_kb(question, k=k)
+        
+    if verbose:
+        print(f'P{i}: {question}')
 
     example = {
       'star_idx': i,
@@ -156,17 +164,22 @@ def output_accuracy_results(examples, exp='exp5', start=None, end=None):
         file.write(f'{start},{end},{end-start},{accuracy(examples)}\n')
 
 
-def generate_prompt_from_kb(n=5):
+def generate_prompt_from_kb(question=question, k=3, retriever=None):
     preamble = """Given a math problem, generate an answer with a rationale.
     
 Examples:
     """
+    if retriever is None:
+        return f'{preamble}\n{question}'
+    
+    examples = retriever.retrieve(question)
+
     lines = []
     lines.append(preamble)
     examples = random.sample(correct_answers, n)
     for example in examples:
-        lines.append(f'Question: {question}\n')
-        lines.append(example)
+        lines.append(f'Question: {example['title']}\n')
+        lines.append(example['text'])
         lines.append('\n')
     lines.append(f'Question: {question}\n')
     return('\n'.join(lines))
@@ -190,5 +203,3 @@ def process_batch(instance_num=0,
         output_accuracy_results(examples, exp=exp, start=start, end=end)
 
 
-def hi():
-    print('hi')
