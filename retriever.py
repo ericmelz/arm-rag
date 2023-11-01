@@ -1,6 +1,7 @@
 from pyserini.search import FaissSearcher
 from datasets import load_dataset
 
+import obfuscator
 
 class Retriever:
     def __init__(self,
