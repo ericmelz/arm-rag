@@ -63,7 +63,7 @@ def extract_gsm_answer(example):
 
 
 def gen_examples(start=0, end=5, n=2, id_prefix='ex4', verbose=False,
-                 k=3, retriever=None):
+                 k=3, retriever=None, obfuscate=False):
   """
   start: start of dataset
   end: end of datset
@@ -93,7 +93,7 @@ def gen_examples(start=0, end=5, n=2, id_prefix='ex4', verbose=False,
       print(f'Q{i}: {question}')
 
     if retriever is not None:
-        question = generate_prompt_from_kb(question, k=k, retriever=retriever)
+        question = generate_prompt_from_kb(question, k=k, retriever=retriever, obfuscate=obfuscate)
         
     example = {
       'star_idx': i,
@@ -168,7 +168,7 @@ def output_accuracy_results(examples, exp='exp6', start=None, end=None,
         file.write(f'{start},{end},{end-start},{accuracy(examples)}\n')
 
 
-def generate_prompt_from_kb(question=None, k=3, retriever=None):
+def generate_prompt_from_kb(question=None, k=3, retriever=None, obfuscate=obfuscate):
     preamble = """Given a math problem, generate an answer with a rationale.
 
 Question / answer pairs have the form
@@ -182,7 +182,7 @@ Examples:
     if retriever is None:
         return f'{preamble}\n{question}'
     
-    examples = retriever.retrieve(question)
+    examples = retriever.retrieve(question, obfuscate=obfuscate)
 
     lines = []
     lines.append(preamble)
@@ -202,13 +202,14 @@ def process_batch(instance_num=0,
                   exp='exp6',
                   k=3,
                   basedir=None,
-                  retriever=None):
+                  retriever=None,
+                  obfuscate=False):
     for batch in range(batches_per_instance - offset // batch_size):
         start = instance_num * batch_size * batches_per_instance + batch * batch_size + offset
         end = start + batch_size
         print(f'Processing {batch=}.  {start=}, {end=}')
         examples = gen_examples(start=start, end=end, n=n, verbose=True,
-                                k=k, retriever=retriever)
+                                k=k, retriever=retriever, obfuscate=obfuscate)
         the_accuracy = accuracy(examples)
         print(f'{the_accuracy=:.2f}')
         print()
