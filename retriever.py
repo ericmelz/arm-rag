@@ -15,7 +15,9 @@ class Retriever:
         for i, docid in enumerate(self.dataset['_id']):
             self.dataset_id_to_index[docid] = i
 
-    def retrieve(self, query, k=5):
+    def retrieve(self, query, k=5, obfuscate=False):
+        if obfuscate:
+            query = obfuscator.obfuscate(query)
         hits = self.searcher.search(query, k=k, threads=self.threads)
         rationales = []
         for idx, hit in enumerate(hits):

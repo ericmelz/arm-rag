@@ -216,3 +216,7 @@ def process_batch(instance_num=0,
                                basedir=basedir)
         output_accuracy_results(examples, exp=exp, start=start, end=end,
                                 basedir=basedir)
+
+
+def hi():
+    print('hi from util')
