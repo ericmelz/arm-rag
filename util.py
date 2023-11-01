@@ -168,7 +168,7 @@ def output_accuracy_results(examples, exp='exp6', start=None, end=None,
         file.write(f'{start},{end},{end-start},{accuracy(examples)}\n')
 
 
-def generate_prompt_from_kb(question=None, k=3, retriever=None, obfuscate=obfuscate):
+def generate_prompt_from_kb(question=None, k=3, retriever=None, obfuscate=False):
     preamble = """Given a math problem, generate an answer with a rationale.
 
 Question / answer pairs have the form
