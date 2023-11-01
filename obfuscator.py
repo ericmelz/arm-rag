@@ -115,7 +115,7 @@ def get_non_name_nouns(names, nouns):
     return list(non_name_noun_set)
 
 
-def obfuscate_query(query):
+def obfuscate(query):
     males = get_males(query)
     females = get_females(query)
     people = males + females
